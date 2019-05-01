@@ -13,8 +13,8 @@ namespace TaoBaoLogin
     {
         static void Main(string[] args)
         {
-            var driver = new ChromeDriver(Directory.GetCurrentDirectory()+"/lib");
-            //var driver = new EdgeDriver(Directory.GetCurrentDirectory()+"/lib");//当前运行目录下面（chromedriver/MicrosoftWebDriver）
+            //var driver = new ChromeDriver(Directory.GetCurrentDirectory()+"/lib");
+            var driver = new EdgeDriver(Directory.GetCurrentDirectory()+"/lib");//当前运行目录下面（chromedriver/MicrosoftWebDriver）
             driver.Navigate().GoToUrl("https://login.taobao.com/member/login.jhtml");
             driver.Manage().Window.Maximize();//窗口最大化，便于脚本执行
             //设置超时等待(隐式等待)时间设置10秒
